@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import { RecipeFormComponent } from './pages/form/recipe-form.component';
 import { RecipeListComponent } from './pages/list/recipe-list.component';
 import { RecipeComponent } from './pages/view/recipe.component';
+import { BookmarkListComponent } from './components/bookmark-list/bookmark-list.component';
 
 @NgModule({
   declarations: [
@@ -13,6 +14,7 @@ import { RecipeComponent } from './pages/view/recipe.component';
     RecipeFormComponent,
     RecipeListComponent,
     RecipeComponent,
+    BookmarkListComponent,
   ],
   imports: [BrowserModule, AppRoutingModule],
   providers: [],
