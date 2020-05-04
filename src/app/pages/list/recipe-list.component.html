@@ -9,7 +9,7 @@
   <ul>
     <li *ngFor="let recipe of item.value; index as i">
       {{ recipe.name }}
-      <!-- <div><a [routerLink]="['/edit', i]">Edit #4</a></div> -->
+      <div><a [routerLink]="['/edit', recipe.id]">Edit</a></div>
     </li>
   </ul>
 </div>
