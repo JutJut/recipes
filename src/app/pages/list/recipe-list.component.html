@@ -1,15 +1,21 @@
-<div><a [routerLink]="['/create']">Create</a></div>
-<div><a [routerLink]="['/view']">View</a></div>
-<div><a [routerLink]="['/edit', 4]">Edit #4</a></div>
+<div class="container">
+  <div class="row">
+    <div class="col">
+      <div><a [routerLink]="['/create']">Create</a></div>
+      <div><a [routerLink]="['/view']">View</a></div>
+      <div><a [routerLink]="['/edit', 4]">Edit #4</a></div>
 
-<div *ngIf="!indexedRecipes">You havn't created any recipes yet.</div>
+      <div *ngIf="!indexedRecipes">You havn't created any recipes yet.</div>
 
-<div *ngFor="let item of indexedRecipes | keyvalue">
-  {{ item.key }}:
-  <ul>
-    <li *ngFor="let recipe of item.value; index as i">
-      {{ recipe.name }}
-      <div><a [routerLink]="['/edit', recipe.id]">Edit</a></div>
-    </li>
-  </ul>
+      <div *ngFor="let item of indexedRecipes | keyvalue">
+        {{ item.key }}:
+        <ul>
+          <li *ngFor="let recipe of item.value; index as i">
+            {{ recipe.name }}
+            <div><a [routerLink]="['/edit', recipe.id]">Edit</a></div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
 </div>
