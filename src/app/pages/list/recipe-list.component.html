@@ -1,7 +1,7 @@
 <div class="container">
   <div class="row">
     <div class="col">
-      <div>
+      <div class="the-nav">
         <a [routerLink]="['/create']" class="btn btn-primary btn-sm">Create</a>
         <a [routerLink]="['/view']" class="btn btn-primary btn-sm">View</a>
         <a [routerLink]="['/edit', 4]" class="btn btn-primary btn-sm">Edit #4</a>
@@ -9,12 +9,12 @@
 
       <div *ngIf="!indexedRecipes">You havn't created any recipes yet.</div>
 
-      <div *ngFor="let item of indexedRecipes | keyvalue">
-        {{ item.key }}:
+      <div *ngFor="let item of indexedRecipes | keyvalue" class="recipes-list">
+        <span class="list-key">{{ item.key }}</span>
         <ul>
           <li *ngFor="let recipe of item.value; index as i">
             {{ recipe.name }}
-            <div><a [routerLink]="['/edit', recipe.id]">Edit</a></div>
+            <a [routerLink]="['/edit', recipe.id]" class="badge badge-primary edit-recipe">Edit</a>
           </li>
         </ul>
       </div>
