@@ -7,6 +7,7 @@ import { RecipeFormComponent } from './pages/form/recipe-form.component';
 import { RecipeListComponent } from './pages/list/recipe-list.component';
 import { RecipeComponent } from './pages/view/recipe.component';
 import { BookmarkListComponent } from './components/bookmark-list/bookmark-list.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,7 @@ import { BookmarkListComponent } from './components/bookmark-list/bookmark-list.
     RecipeComponent,
     BookmarkListComponent,
   ],
-  imports: [BrowserModule, AppRoutingModule],
+  imports: [BrowserModule, AppRoutingModule, BrowserAnimationsModule],
   providers: [],
   bootstrap: [AppComponent],
 })
