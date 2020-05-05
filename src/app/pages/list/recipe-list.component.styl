@@ -1,0 +1,31 @@
+.the-nav {
+    margin: 32px 0px;
+    .btn {
+        margin-right: 12px;
+    }
+}
+
+.recipes-list {
+    position: relative;
+    border-bottom: 1px solid lightgray;
+    padding-bottom: 16px;
+    margin-bottom: 16px;
+    min-height: 52px;
+    .list-key {
+        position: absolute;
+        font-weight: 600;
+        font-size: 2rem;
+        line-height: 100%;
+    }
+    ul {
+        margin: 0;
+        li {
+            list-style: none;
+            a {
+                &.edit-recipe {
+                    display: none;
+                }
+            }
+        }
+    }
+}

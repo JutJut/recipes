@@ -3,6 +3,7 @@ import { Recipe } from '../../models/recipe.model';
 
 export const exampleRecipeList: Recipe[] = [
   {
+    id: '1',
     cookingTime: 25,
     difficulty: Difficulty.BEGINNER,
     imageUrl:
@@ -30,6 +31,7 @@ export const exampleRecipeList: Recipe[] = [
     preparationTime: 20,
   },
   {
+    id: '2',
     cookingTime: 25,
     difficulty: Difficulty.ADVANCED,
     imageUrl:
@@ -65,6 +67,7 @@ export const exampleRecipeList: Recipe[] = [
     preparationTime: 35,
   },
   {
+    id: '3',
     cookingTime: 60,
     difficulty: Difficulty.EXPERT,
     imageUrl:
@@ -103,6 +106,7 @@ export const exampleRecipeList: Recipe[] = [
     preparationTime: 30,
   },
   {
+    id: '4',
     cookingTime: 30,
     difficulty: Difficulty.BEGINNER,
     imageUrl:
@@ -131,6 +135,7 @@ export const exampleRecipeList: Recipe[] = [
     preparationTime: 30,
   },
   {
+    id: '5',
     cookingTime: 40,
     difficulty: Difficulty.BEGINNER,
     imageUrl: 'https://c1.staticflickr.com/4/3496/3903180442_8ec5a4de0a_b.jpg',
@@ -152,6 +157,7 @@ export const exampleRecipeList: Recipe[] = [
     preparationTime: 10,
   },
   {
+    id: '6',
     cookingTime: 15,
     difficulty: Difficulty.BEGINNER,
     imageUrl:
@@ -171,6 +177,7 @@ export const exampleRecipeList: Recipe[] = [
     preparationTime: 15,
   },
   {
+    id: '7',
     cookingTime: 30,
     difficulty: Difficulty.ADVANCED,
     imageUrl: 'https://c2.staticflickr.com/4/3252/3287806712_4e06886279_z.jpg',
@@ -227,6 +234,7 @@ export const exampleRecipeList: Recipe[] = [
     preparationTime: 10,
   },
   {
+    id: '8',
     cookingTime: 10,
     difficulty: Difficulty.BEGINNER,
     imageUrl:
@@ -254,6 +262,7 @@ export const exampleRecipeList: Recipe[] = [
     preparationTime: 5,
   },
   {
+    id: '9',
     cookingTime: 25,
     difficulty: Difficulty.ADVANCED,
     imageUrl:
@@ -282,6 +291,7 @@ export const exampleRecipeList: Recipe[] = [
     preparationTime: 10,
   },
   {
+    id: '10',
     cookingTime: 10,
     difficulty: Difficulty.BEGINNER,
     imageUrl:
@@ -305,6 +315,7 @@ export const exampleRecipeList: Recipe[] = [
     preparationTime: 15,
   },
   {
+    id: '11',
     cookingTime: 35,
     difficulty: Difficulty.BEGINNER,
     imageUrl:
@@ -326,6 +337,7 @@ export const exampleRecipeList: Recipe[] = [
 ];
 
 export const emptyRecipe: Recipe = {
+  id: null,
   cookingTime: 0,
   difficulty: Difficulty.BEGINNER,
   imageUrl: '',

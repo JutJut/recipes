@@ -24,7 +24,7 @@ export class RecipeFormComponent implements OnInit {
     const recipeId = routeParams.recipeId;
 
     if (recipeId) {
-      this.recipe = exampleRecipeList[Number(recipeId)];
+      this.recipe = exampleRecipeList.find((foo) => foo.id === recipeId);
     }
 
     console.log('RECIPE_FORM', recipeId, this.recipe);
