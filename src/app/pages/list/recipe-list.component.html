@@ -1,9 +1,11 @@
 <div class="container">
   <div class="row">
     <div class="col">
-      <div><a [routerLink]="['/create']">Create</a></div>
-      <div><a [routerLink]="['/view']">View</a></div>
-      <div><a [routerLink]="['/edit', 4]">Edit #4</a></div>
+      <div>
+        <a [routerLink]="['/create']" class="btn btn-primary btn-sm">Create</a>
+        <a [routerLink]="['/view']" class="btn btn-primary btn-sm">View</a>
+        <a [routerLink]="['/edit', 4]" class="btn btn-primary btn-sm">Edit #4</a>
+      </div>
 
       <div *ngIf="!indexedRecipes">You havn't created any recipes yet.</div>
 
